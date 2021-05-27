@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Book Shelf</title>
+  </head>
+  <body>
+    <header>
+      <h1>Katalog Buku</h1>
+    </header>
+    <main>
+      <div id="tambah-bar">
+        <div class="text-tambah">
+          <p>Tambahakan Katalog Buku</p>
+        </div>
+        <form id="input-data">
+          <div class="input-elemen">
+            <label for="judul">Judul:</label>
+            <input type="text" name="judul" id="judul" required>
+          </div>
+          <div class="input-elemen">
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" required>
+          </div>
+          <div class="input-elemen">
+            <label for="tahun">Tahun:</label>
+            <input type="datetime" name="tahun" id="tahun" required>
+          </div>
+          <div class="input-elemen">
+            <input type="checkbox"  id="dibaca">
+            <label for="dibaca">Sudah dibaca</label>
+          </div>
+          <div class="input-elemen">
+            <input type="submit" value="Tambahkan" class="tmbl-submit">
+          </div>
+        </form>
+        <button id="keluar" onclick="keluar()">Batalkan</button>
+     </div>
+      <div id="tambah" onclick="menambah()">
+        <button class="tambahkan" >
+        <img src="assets/img/plus.svg" alt="">
+          <p></p>Tambah</p>
+        </button>
+      </div>
+      <div id="pilihan">
+        <p class="txt-terbaca" onclick="terbaca()">Sudah Dibaca</p>
+        <p class="txt-blmterbaca" onclick="belumTerbaca()">Belum Dibaca</p>
+      </div>
+      <div id="terbaca">
+        <p class="txt-head">Buku yang sudah dibaca</p>
+      </div>
+      <div id="belum-terbaca">
+        <p class="txt-head">Buku yang belum dibaca</p>
+      </div>
+    </main>
+<div class="background-wave">
+  <img src="assets/img/wave.svg" alt="">
+</div>
+  <script src="assets/data.js"></script>
+    <script src="assets/dom.js"></script>
+    <script src="assets/script.js"></script>
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+  </body>
+</html>
